@@ -62,3 +62,7 @@ const db = mysql.createConnection({
 
 5. Ejecutar servidor:
    node app.js
+
+
+   Docu:
+  https://docs.google.com/document/d/1w6c0GbejxiWQ2gmvQzOBUqekQV9Uzr90yuSA8qkEh_8/edit?tab=t.0#heading=h.583uimbracp1
