@@ -20,8 +20,7 @@ Este proyecto es una página web que permite cargar y mostrar servicios desde un
 
    Primero, clona este repositorio en tu máquina local:
    
-   git clone https://tu-repositorio.git
-   cd tu-repositorio
+   git clone https://github.com/eliann313/proyecto-pp2.git
 
    2. Instalar dependencias:
    npm install (instalará sql, cors y express)
