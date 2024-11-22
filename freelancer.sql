@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-11-2024 a las 13:32:08
+-- Tiempo de generación: 22-11-2024 a las 15:17:27
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -40,7 +40,10 @@ CREATE TABLE `personas` (
 INSERT INTO `personas` (`id`, `nombrePersona`, `telefono`) VALUES
 (89, 'Spreen, el Momo', '1145672332'),
 (90, 'Mateo', '1145909021'),
-(94, 'Facu', '1168595613');
+(94, 'Facu', '1168595613'),
+(98, 'Lorena', '1134345656'),
+(99, 'Nico', '1123234590'),
+(100, 'Omar', '1178212132');
 
 -- --------------------------------------------------------
 
@@ -65,7 +68,10 @@ CREATE TABLE `servicios` (
 INSERT INTO `servicios` (`id`, `nombreServicio`, `descripcion`, `precio`, `zona_id`, `persona_id`, `foto`) VALUES
 (89, 'Clases de fulbo', 'Clases de gambeta con spreen y el momo', 100000000, 89, 89, ''),
 (90, 'Pintura', 'Te pinto la casa', 20000, 90, 90, ''),
-(94, 'Hago paginas web', 'Te hago una web', 80000, 94, 94, '');
+(94, 'Hago paginas web', 'Te hago una web', 80000, 94, 94, ''),
+(98, 'Mantenimiento PC', 'Limpio y ensamblo computadoras.', 20000, 98, 98, ''),
+(99, 'Edicion de videos', 'Edito videos para tu negocio', 20000000, 99, 99, ''),
+(100, 'Rutina musculacion', 'Hago una rutina en base a tu tiempo y objetivos', 15000, 100, 100, '');
 
 -- --------------------------------------------------------
 
@@ -85,7 +91,10 @@ CREATE TABLE `zonas` (
 INSERT INTO `zonas` (`id`, `nombreZona`) VALUES
 (89, 'Palermo'),
 (90, 'Lugano'),
-(94, 'Flores');
+(94, 'Flores'),
+(98, 'Pompeya'),
+(99, 'Lanus'),
+(100, 'Pompeya');
 
 --
 -- Índices para tablas volcadas
@@ -119,19 +128,19 @@ ALTER TABLE `zonas`
 -- AUTO_INCREMENT de la tabla `personas`
 --
 ALTER TABLE `personas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT de la tabla `servicios`
 --
 ALTER TABLE `servicios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT de la tabla `zonas`
 --
 ALTER TABLE `zonas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- Restricciones para tablas volcadas
